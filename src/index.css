@@ -1,0 +1,43 @@
+
+:root {
+  /* Main Colors */
+  --primary-color: #EC7299;
+  --secondary-color: #F8BBD0;
+  --dark-color: #6E354A;
+  --background-color: #FFF9FA;
+  --white-color: #FFFFFF;
+  --text-color: #6E354A;
+
+  /* Shadow */
+  --box-shadow: 0 4px 15px rgba(173, 82, 111, 0.12);
+
+  /* Border */
+  --border-color: #F3D5DF;
+  --border-radius: 20px;
+
+  /* Typography */
+  --main-font: Arial, sans-serif;
+
+  /* Transition */
+  --main-transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
