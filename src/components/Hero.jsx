@@ -3,8 +3,9 @@ function Hero() {
     <>
       <section className="hero" id="home">
         <div className="hero-content">
-          <p>Hello, I'm Ola Al-Shehri</p>
-          <h2>Junior Frontend Developer</h2>
+            
+          <p className="hero-title">Hello, I'm Ola Al-Shehri</p>
+          <h1>Junior Frontend Developer</h1>
 
           <p className="hero-desc">
           I build modern, responsive, and user-friendly

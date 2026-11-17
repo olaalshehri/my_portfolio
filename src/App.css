@@ -1,4 +1,4 @@
-
+/* Navbar Section */
 .navbar {
   position: sticky;
   top: 0;
@@ -40,4 +40,68 @@
   padding: 8px 15px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px ;
+}
+.hero-content {
+
+}
+
+.hero-title {
+  color: var(--dark-color);
+  font-size: 20px;
+  margin-bottom:15px;
+}
+.hero h1 {
+  color:var(--dark-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero-desc {
+  color:var(--text-color);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 30px;
+  transition: var(--main-transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--box-shadow);
+  color: var(--white-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
 }
