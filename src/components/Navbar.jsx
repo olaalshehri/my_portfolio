@@ -3,20 +3,20 @@ function Navbar() {
     <>
       <section className="navbar">
         <div className="navbar-logo">
-          <a href="#home" className="logo">
+          <a href="#home" id="home" className="logo">
             ع
           </a>
         </div>
 
         <div className="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" id="home">الرئيسية</a>
+          <a href="#about" id="about">عنّي</a>
+          <a href="#skills" id="skills">التقنيات</a>
+          <a href="#projects" id="projects">أعمالي</a>
+          <a href="#contact" id="contact">تواصل معي</a>
         </div>
 
-        <button className="language-btn">AR</button>
+        <button className="language-btn">EN</button>
       </section>
     </>
   );

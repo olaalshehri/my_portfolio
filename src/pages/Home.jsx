@@ -1,5 +1,7 @@
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import Navbar from './components/Navbar';
+import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
 
 function Home() {
 
@@ -7,9 +9,11 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <AboutMe />
+      <Projects />
     </>
     
   )
 }
 
-export default Home 
+export default Home;

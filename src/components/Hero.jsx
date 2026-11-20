@@ -3,27 +3,24 @@ function Hero() {
     <>
       <section className="hero" id="home">
         <div className="hero-content">
-            
-          <p className="hero-title">Hello, I'm Ola Al-Shehri</p>
-          <h1>Junior Frontend Developer</h1>
+          <p className="hero-title">مرحباً، أنا علا الشهري</p>
+          <h1>مطورة واجهات ويب </h1>
 
           <p className="hero-desc">
-          I build modern, responsive, and user-friendly
-          web experiences using React.
-        </p>
+            شغوفة بتطوير الويب وتصميم واجهات تفاعلية وسهلة الاستخدام، والعمل على
+            تطوير تطبيقات الويب.
+          </p>
+
           <div className="hero-buttons">
+            <a href="#projects" id="projects" className="btn btn-primary">
+              أعمالي
+            </a>
 
-          <a href="#projects" className="btn btn-primary">
-            View My Work
-          </a>
-
-          <a href="#contact" className="btn btn-secondary">
-            Contact Me
-          </a>
+            <a href="#contact" id="contact" className="btn btn-secondary">
+              تواصل معي
+            </a>
+          </div>
         </div>
-
-        </div>
-
       </section>
     </>
   );
