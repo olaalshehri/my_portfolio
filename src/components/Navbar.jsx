@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <>
       <section className="navbar">
-        <div className="navbar-logo">
+        <div className="logo">
           <a href="#home" id="home" className="logo">
             ع
           </a>

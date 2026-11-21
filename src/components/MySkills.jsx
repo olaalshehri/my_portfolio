@@ -16,7 +16,7 @@ import {
 function MySkills() {
   return (
     <section className="skills">
-      <h2>التقنيات</h2>
+      <h2 className="section-title">التقنيات</h2>
       <p className="skills-description">
         التقنيات والأدوات التي أستخدمها لبناء مشاريعي.
       </p>

@@ -4,7 +4,7 @@ function AboutMe() {
   return (
     <>
     <section className="about-section" id="about">
-      <h1 className="about-title">نبذة عني</h1>
+      <h1 className="section-title">نبذة عني</h1>
       <p className="about-desc">
         خريجة تخصص تقنية البرمجة وتطوير الويب، شغوفة بمجال البرمجة وتطوير مواقع
         الويب، ولدي اهتمام ببناء وتطوير تطبيقات الويب باستخدام التقنيات الحديثة.

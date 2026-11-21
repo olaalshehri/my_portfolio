@@ -2,6 +2,7 @@
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +26,7 @@
 }
 
 .navbar-links a {
-  color: var(--text-color);
+  color: var(--dark-color);
   transition: var(--main-transition);
 }
 
@@ -38,7 +39,7 @@
   color: var(--dark-color);
   border: none;
   padding: 8px 15px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
@@ -53,19 +54,19 @@
 .hero-content {
   
 }
-
 .hero-title {
   color: var(--dark-color);
-  font-size: 20px;
-  margin-bottom:15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 .hero h1 {
   color:var(--dark-color);
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 .hero-desc {
-  color:var(--text-color);
+  color:var(--dark-color);
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -78,7 +79,7 @@
 
 .btn {
   padding: 15px 25px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   transition: var(--main-transition);
 }
 
@@ -115,11 +116,11 @@
   align-items: center;
   text-align: center;
 }
-
-.about-title {
+.section-title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--dark-color);
+  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -133,18 +134,19 @@
 /* Skills Section */
 .skills {
   padding: 90px 8%;
-  background-color: #faf8fc;
+  background-color: var(--background-color);
   text-align: center;
 }
 
 .skills h2 {
   font-size: 32px;
-  color: #45263f;
+  color: var(--dark-color);
   margin-bottom: 12px;
 }
 
 .skills-description {
-  color: #777;
+  color: var(--dark-color);
+  opacity: 0.7;
   font-size: 15px;
   margin-bottom: 45px;
 }
@@ -158,21 +160,24 @@
 }
 
 .skills-card {
-  background-color: #fff;
-  border: 1px solid #eee5f0;
-  border-radius: 20px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   padding: 30px 22px;
-  box-shadow: 0 5px 20px rgba(69, 38, 63, 0.05);
-  transition: 0.3s ease;
+  box-shadow: var(--box-shadow);
+  transition: var(--main-transition);
+  position: relative;
+  z-index: 1;
 }
+
 
 .skills-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(69, 38, 63, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .skills-card h3 {
-  color: #9b4f96;
+  color: var(--primary-color);
   font-size: 20px;
   margin-bottom: 25px;
 }
@@ -192,15 +197,15 @@
   justify-content: center;
   gap: 12px;
   padding: 15px 8px;
-  background-color: #faf8fc;
+  background-color: var(--background-color);
   border: 1px solid transparent;
-  border-radius: 15px;
-  transition: 0.3s ease;
+  border-radius: var(--border-radius);
+  transition: var(--main-transition);
 }
 
 .skill-item:hover {
-  background-color: #f3eaf5;
-  border-color: #e6c8fa;
+  background-color: var(--secondary-color);
+  border-color: var(--border-color);
   transform: translateY(-4px);
 }
 
@@ -213,14 +218,14 @@
 .skill-item span {
   font-size: 14px;
   font-weight: 600;
-  color: #45263f;
+  color: var(--dark-color);
 }
 
 /* Text-only Skills */
 .skill-text-icon {
-  font-size: 19px 
-  font-weight: 800 
-  color: #9b4f96 ;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--primary-color);
 }
 
 /* Responsive Design */
@@ -276,7 +281,7 @@
 
 .project-card {
   background-color: white;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
@@ -319,7 +324,7 @@
   background-color: var(--secondary-color);
   color: white;
   padding: 6px 12px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   font-size: 13px;
 }
 .btn-github {
@@ -327,7 +332,7 @@
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: white;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -337,4 +342,38 @@
   box-shadow: var(--box-shadow);
 }
 
-/
+
+/* Footer Section */
+.section-footer {
+  padding: 10px 10px;
+}
+
+.container-footer {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--main-transition);
+}
+
+.copyright-footer {
+  direction: ltr;
+  color: var(--dark-color);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+}

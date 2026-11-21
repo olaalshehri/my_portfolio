@@ -2,7 +2,7 @@ function Projects() {
   return (
     <section className="projects">
       <div className="projects-container">
-        <h2 className="projects-title">
+        <h2 className="section-title">
           أعمالي
         </h2>
         <p className="projects-description">
